@@ -144,19 +144,20 @@ const beautifulStranger = () => {
 
   $("li:contains('Strider')").text('Aragorn');
 
-  // 1. change the buddy 'Strider' textnode to "Aragorn"
-
-  // hint: You can get a list of elements by tag name, such as 'aside'
-
 };
 
-// COMMIT YOUR WORK
-// The commit message should read: "Chapter 7 complete - Strider is changed to Aragorn"
 
 // ============
 // Chapter 8
 // ============
 const forgeTheFellowShip = () => {
+
+  const $newFellowship = $('<div id = the-fellowship></div>');
+  $newFellowship.append('<h1>The Fellowship</h1>')
+  $('#middle-earth').append($newFellowship);
+  $('.hobbit').appendTo($("#the-fellowship"));
+  $('.buddy').appendTo($("#the-fellowship"));
+
 
   // 1. create a new div with an id 'the-fellowship'
 

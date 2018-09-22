@@ -159,23 +159,19 @@ const forgeTheFellowShip = () => {
   $('.buddy').appendTo($("#the-fellowship"));
 
 
-  // 1. create a new div with an id 'the-fellowship'
-
-  // 2. add an h1 with the text 'The Fellowship' to this new div
-
-  // 3. append the fellowship to middle-earth
-
-  // 4. add the unordered lists of hobbits and buddies to 'the-fellowship'
-
 };
 
-// COMMIT YOUR WORK
-// The commit message should read: "Chapter 8 complete - The Fellowship is created"
 
 // ============
 // Chapter 9
 // ============
 const theBalrog = () => {
+
+  $("li:contains('Gandalf')").text('Gandalf the White');
+  $("li:contains('Gandalf')").addClass('the-white');
+
+
+
 
   // 1. change the 'Gandalf' textNode to 'Gandalf the White'
 

@@ -99,22 +99,26 @@ const makeBaddies = () => {
     $ul.append($li);
     $('#Mordor').append($ul)
   }
-
-  // 1. display an unordered list of baddies in Mordor
-
-  // 2. give each of the baddies a class of "baddy"
-
-  // 3. remember to append them to Mordor
 };
 
-// COMMIT YOUR WORK
-// The commit message should read: "Chapter 4 complete - Made the Baddies"..
 
 // ============
 // Chapter 5
 // ============
 const makeBuddies = () => {
+  const $aside = $('<aside/>');
+  $aside.append('<h1>Buddies</h1?')
+  const $ul = $('<ul/>');
+  for (let i = 0; i < buddies.length; i++){
+    const $li = $('<li/>');
+    $li.text(buddies[i]);
+    $li.addClass('buddy');
+    $ul.append($li);
+    $aside.append($ul);
 
+
+  }
+  $('#middle-earth').append($aside);
   // 1. create an aside tag and append it to middle-earth below mordor
 
   // 2. display an unordered list of buddies in the aside

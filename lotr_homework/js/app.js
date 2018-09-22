@@ -83,25 +83,22 @@ const keepItSecretKeepItSafe = () => {
   console.log(hobbits[0])
   const $theRing = $('<div id= the-ring>The Ring</div>');
   $( "li:contains('Frodo Baggins')").append($theRing);
-
-
-  // 1. create an empty div with an id of 'the-ring'
-
-  // 2. add the ring as a child of Frodo
-
-  // hint: Frodo does not have an id, but there is a command to retrieve all elements with a certain class. This should give you an array for you to access . . .
-
-  // when you think you have given Frodo the ring, check in your Elements tab
-
 };
 
-// COMMIT YOUR WORK
-// The commit message should read: "Chapter 3 complete - Made the ring and gave it to Frodo".
 
 // ============
 // Chapter 4
 // ============
 const makeBaddies = () => {
+
+  const $ul = $('<ul/>');
+  for (let i=0; i< baddies.length; i++) {
+    const $li = $('<li/>');
+    $li.text(baddies[i])
+    $li.addClass('baddy');
+    $ul.append($li);
+    $('#Mordor').append($ul)
+  }
 
   // 1. display an unordered list of baddies in Mordor
 

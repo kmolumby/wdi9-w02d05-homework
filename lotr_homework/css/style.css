@@ -19,3 +19,7 @@ button {
   background-color: white;
   border: 2px solid grey;
 }
+
+.line-through {
+  text-decoration: line-through
+}

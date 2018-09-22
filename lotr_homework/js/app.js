@@ -170,29 +170,18 @@ const theBalrog = () => {
   $("li:contains('Gandalf')").text('Gandalf the White');
   $("li:contains('Gandalf')").addClass('the-white');
 
-
-
-
-  // 1. change the 'Gandalf' textNode to 'Gandalf the White'
-
-  // 2. add a class "the-white" to this element
-
-  // 3. in the style.css file, add a css rule to make elements of the class "the-white" have a white background and a grey border
-
 };
 
-// COMMIT YOUR WORK
-// The commit message should read: "Chapter 9 complete - Updated Gandalf"
+
 
 // ============
 // Chapter 10
 // ============
 const hornOfGondor = () => {
-
-  // 1. create a pop-up alert that the horn of gondor has been blown
-
-  // 2. Boromir's been killed by the Uruk-hai! Put a linethrough on Boromir's name
-
+    alert("The horn of Gondor has been blown");
+    $("li:contains('Boromir')").addClass('line-through');
+    $("li:contains('The Uruk-hai')").remove();
+   
   // 3. Tricky: Remove the Uruk-Hai from the Baddies on the page
 
 };

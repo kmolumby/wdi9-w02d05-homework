@@ -142,6 +142,8 @@ const leaveTheShire = () => {
 // ============
 const beautifulStranger = () => {
 
+  $("li:contains('Strider')").text('Aragorn');
+
   // 1. change the buddy 'Strider' textnode to "Aragorn"
 
   // hint: You can get a list of elements by tag name, such as 'aside'

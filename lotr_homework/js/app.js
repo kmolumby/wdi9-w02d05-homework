@@ -208,21 +208,19 @@ const weWantsIt = () => {
      $('#Mordor').append($gollum);
      $('#the-ring').appendTo($gollum);
 
-  // 1. Create a div with an id of 'gollum' and add it to Mordor
-
-  // 2. Move the ring from Frodo and give it to Gollum
-
-  // 3. Move Gollum into Mount Doom
-
 };
 
-// COMMIT YOUR WORK
-// The commit message should read: "Chapter 12 complete - Gollum is trying to get the ring".
 
 // ============
 // Chapter 13
 // ============
 const thereAndBackAgain = () => {
+
+    $('#gollum, #the-ring').remove();
+    $('.baddy').remove();
+    $('.hobbit').appendTo('#The-Shire');
+
+
 
   // 1. remove Gollum and the Ring from the DOM
 

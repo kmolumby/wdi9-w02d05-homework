@@ -195,17 +195,18 @@ const itsDangerousToGoAlone = () => {
   const $mountDoom = $('<div id=mount-doom></div>')
   $mountDoom.append('<h1>Mount Doom</h1>')
   $('#Mordor').append($mountDoom);
-  // 2. add a div with an id of 'mount-doom' to Mordor
-
+  
 };
 
-// COMMIT YOUR WORK
-// The commit message should read: "Chapter 11 complete - Sam and Frodo are in Mordor and Mount Doom has been created"
 
 // ============
 // Chapter 12
 // ============
 const weWantsIt = () => {
+      const $gollum = $('<div id=gollum></div>');
+      $gollum.append('<h1>Gollum</h1>')
+     $('#Mordor').append($gollum);
+     $('#the-ring').appendTo($gollum);
 
   // 1. Create a div with an id of 'gollum' and add it to Mordor
 
